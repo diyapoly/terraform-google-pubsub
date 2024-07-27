@@ -44,11 +44,7 @@ output "subscription_names" {
 }
 
 output "subscription_paths" {
-  value = concat(
-    google_pubsub_subscription.push_subscriptions.*.path,
-    google_pubsub_subscription.pull_subscriptions.*.path,
-  )
-
-  description = "The path list of Pub/Sub subscriptions"
+  value = null
+  description = "The path list of Pub/Sub subscriptions, currently set to null due to provider version incompatibility"
 }
 
