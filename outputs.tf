@@ -47,4 +47,3 @@ output "subscription_paths" {
   value = null
   description = "The path list of Pub/Sub subscriptions, currently set to null due to provider version incompatibility"
 }
-
